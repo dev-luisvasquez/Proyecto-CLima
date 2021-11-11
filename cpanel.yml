@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home3/portaf22/Clima.portafoliodl.com/
+    - /bin/rsync -av  $DEPLOYPATH

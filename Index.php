@@ -8,7 +8,5 @@
 </head>
 <body>
       <h2>esta es la pagina de clima</h2>
-      <h1>si</h1>
-      <h3>ahora si</h3>
 </body>
 </html>

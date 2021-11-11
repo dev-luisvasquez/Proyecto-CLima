@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home3/portaf22/Clima.portafoliodl.com/repositories/Proyecto-CLima
-    - /bin/rsync -av repositories/Proyecto-CLima $DEPLOYPATH
+    - export DEPLOYPATH=/home3/portaf22/Clima.portafoliodl.com/
+    - /bin/rsync -av Clima.portafoliodl.com/ $DEPLOYPATH

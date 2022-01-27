@@ -31,13 +31,11 @@ const consultarAPI= async(ciudad,pais)=>{
       divResultado.innerHTML=`
       
       <div class="resultadoClima">
-            <div class= "card">
                   <h2>${name}, ${sys.country}</h2>
+                  <h2>Humedad: ${main.humidity}</h2>
                   <h1><span>${parseFloat(main.temp-kelvin,10).toFixed(2)} &#x2103;</span></h1>
-                  <h3><span>Temperatura Minima: ${parseFloat(main.temp_min-kelvin,10).toFixed(2)}</span></h3>
-                  <h3><span>Temperatura Maxima: ${parseFloat(main.temp_max-kelvin,10).toFixed(2)}</span></h3>
-            
-            </div>
+                  <h3><span>Temperatura Minima: ${parseFloat(main.temp_min-kelvin,10).toFixed(2)} &#x2103</span></h3>
+                  <h3><span>Temperatura Maxima: ${parseFloat(main.temp_max-kelvin,10).toFixed(2)} &#x2103</span></h3>
       </div>
                 
       `;      

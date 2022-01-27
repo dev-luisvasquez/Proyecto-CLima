@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap');
+
+*{
+      border: 0;
+      margin: 0;
+      border: border-box;
+      scroll-behavior: smooth;
+  }
+  
+
+body{
+      background-color: #37465b;
+}
+
+#titulo{
+      width: 100%;
+      color: aquamarine;
+      
+      font-size: 50px;
+      text-align: left;
+      background-color:rgba(56, 54, 54, 0.822);
+      
+}
+
+.header{
+      width: 100%;
+      background-color: #42628f;
+}
+
+.header h2{
+      margin-left: 10px;
+      font-size: 50px;
+      color:aquamarine;
+      font-family: 'Raleway', sans-serif;
+}
+
+.container{
+      margin: 2%;
+      width: 90%;
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: var(--bs-gutter-x, 0.75rem);
+      margin-right: auto;
+      margin-left: auto;
+      background-color: #d3cdcd44;
+}
+
+.search{
+      color: rgb(19, 187, 230);
+      align-items: center;
+      align-content: space-between;
+      text-align: center;
+      font-size: 30px;
+      font-family: 'Roboto', sans-serif;
+}
+
+#submit{
+      background-color: #17495e;
+      color: #fff;
+      padding: 10px 5px;
+      border-radius: 25px;
+      border: solid 0px;
+      margin: 15px;
+}
+
+.grupo{
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap:50px;
+      padding: 45px 0px;
+}
+
+.resultadoClima{
+      width: 40%;
+      background-color: cadetblue;
+      display: contents;
+      align-content: centers;
+      text-align: center;
+      
+
+}
+
+.resultadoClima h2{
+      color: #fff;
+      font-size: 20px;
+}
+
+.resultadoClima h1{
+      color: aquamarine;
+      font-size: 50px;
+}
+
+.card{
+      width: 300px;
+      background-color: brown;
+      align-items: center;
+}
+
+
+
+@media screen and (max-width: 700px){
+      .header h2{
+            font-size: 30px;
+      }
+      
+}

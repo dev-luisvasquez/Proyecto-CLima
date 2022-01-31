@@ -8,32 +8,25 @@
       <title>Clima</title>
 </head>
 <body>
-      <div class="header">
-            <h2>CLIMA-TIME</h2>
-      </div>
-      
-
       <div class="container">
             <div class="search">
                   <div id="msj-error"></div>
-                        <label htmlfor="ciudad" >ciudad</label>
-                        <input type="text" name="ciudad" id="ciudad">
+                  
+                  <label htmlfor="ciudad" >ciudad</label>
+                  <input type="text" name="ciudad" id="ciudad">
 
-                        <label htmlfor="pais">pais</label>
-                         <input type="text" name="pais" id="pais">
+                  <label htmlfor="pais">pais</label>
+                  <input type="text" name="pais" id="pais">
 
-                        <button type="button" onclick="obtenerClima()">buscar</button>
+                  <button type="button" onclick="obtenerClima()">Buscar</button>
 
-                  </div>  
+            
+                  <div class="divResultado" id="divResultado"></div>
+                  <div id="climas"></div>
             </div>
-
-      <div class="divResultado" id="divResultado">
             
       </div>
-
-      <div id="climas">
-
-      </div>
+      
 
 
 

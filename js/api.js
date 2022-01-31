@@ -19,11 +19,11 @@ const consultarAPI= async(ciudad,pais)=>{
       console.log(resultado);
 
       if(resultado.cod =="404"){
-            mostrarError("#msj-error","no hay resultado");
+            mostrarError("#msj-error","Sin Resultado");
             return;
       }
 
-      const {name,main,sys}=resultado;
+      const {name,main,sys,weather}=resultado;
       if(!name) return null;
 
       let divResultado = document.querySelector("#divResultado");
@@ -32,12 +32,12 @@ const consultarAPI= async(ciudad,pais)=>{
       
       <div class="resultadoClima">
                   <h2>${name}, ${sys.country}</h2>
-                  <h2>Humedad: ${main.humidity}</h2>
                   <h1><span>${parseFloat(main.temp-kelvin,10).toFixed(2)} &#x2103;</span></h1>
                   <h3><span>Temperatura Minima: ${parseFloat(main.temp_min-kelvin,10).toFixed(2)} &#x2103</span></h3>
                   <h3><span>Temperatura Maxima: ${parseFloat(main.temp_max-kelvin,10).toFixed(2)} &#x2103</span></h3>
+                  <h3><span>Humedad: ${main.humidity}%</span></h3>
       </div>
-                
+
       `;      
 }
 

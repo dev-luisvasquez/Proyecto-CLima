@@ -14,6 +14,7 @@ const consultarAPI= async(ciudad,pais)=>{
       const apiKey="404c8164efe4cda212a2e4dae35e48d2"
       const url=`https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${apiKey}`;
       console.log(url);
+    
       const respuesta = await fetch(url);
       const resultado = await respuesta.json();
       console.log(resultado);
@@ -23,18 +24,19 @@ const consultarAPI= async(ciudad,pais)=>{
             return;
       }
 
-      const {name,main,sys,weather}=resultado;
+      const {name,main,sys}=resultado;
       if(!name) return null;
 
       let divResultado = document.querySelector("#divResultado");
 
       divResultado.innerHTML=`
       
-      <div class="resultadoClima">
+      <div class="resultadoClima">  
+                  <i id="icono"></i>
                   <h2>${name}, ${sys.country}</h2>
                   <h1><span>${parseFloat(main.temp-kelvin,10).toFixed(2)} &#x2103;</span></h1>
-                  <h3><span>Temperatura Minima: ${parseFloat(main.temp_min-kelvin,10).toFixed(2)} &#x2103</span></h3>
-                  <h3><span>Temperatura Maxima: ${parseFloat(main.temp_max-kelvin,10).toFixed(2)} &#x2103</span></h3>
+                  <h3><span>Temp Minima: ${parseFloat(main.temp_min-kelvin,10).toFixed(2)} &#x2103</span></h3>
+                  <h3><span>Temp Maxima: ${parseFloat(main.temp_max-kelvin,10).toFixed(2)} &#x2103</span></h3>
                   <h3><span>Humedad: ${main.humidity}%</span></h3>
       </div>
 

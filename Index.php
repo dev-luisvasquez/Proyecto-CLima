@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="style/app.css">
+      <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
       <title>Clima</title>
 </head>
 <body>
@@ -12,11 +13,13 @@
             <div class="search">
                   <div id="msj-error"></div>
                   
-                  <label htmlfor="ciudad" >ciudad</label>
-                  <input type="text" name="ciudad" id="ciudad">
-
-                  <label htmlfor="pais">pais</label>
+                  <label htmlfor="pais">País</label>
+                  <i  class="icon ion-md-map"></i>
                   <input type="text" name="pais" id="pais">
+
+                  <label htmlfor="ciudad" >Ciudad</label>
+                  <i class="icon ion-md-pin"></i>
+                  <input type="text" name="ciudad" id="ciudad">
 
                   <button type="button" onclick="obtenerClima()">Buscar</button>
 
